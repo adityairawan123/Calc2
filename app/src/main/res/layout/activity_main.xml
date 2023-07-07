@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:weightSum="1"
+        tools:context="abhiandroid.com.calculater.MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.07"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="MASUKAN 2 ANGKA"
+            android:textColorLink="@color/purple_700"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            tools:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editOp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editOp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="HASIL"
+            android:textColorLink="@android:color/holo_orange_dark"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible"
+            tools:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:text="0.00"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btnmul"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="*" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="0.07"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsub"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btndiv"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="/" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="0.07"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnclr"
+                android:layout_width="80dp"
+                android:layout_height="78dp"
+                android:layout_weight="0.03"
+                android:text="Clear" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
